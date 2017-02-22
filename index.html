@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 6</title>
+  </head>
+  <body>
+      <img src="img/image1.jpg" id="image1" />
+      <img src="img/image2.jpg" id="image2" />
+      <img src="img/image3.jpg" id="image3" />
+      <img src="img/image4.jpg" id="image4" />
+      <img src="img/image5.jpg" id="image5" />
+
+      <!--Dans le fichier HTML fourni, faire comme dans l'exercice 5 mais remettre l'image d'origine dès que la souris ne survol plus l'image.
+Bonus Ne faire que deux fonctions JavaScript pour cet exercice.-->
+
+<script>
+var img1 = document.getElementById("image1");  // declare ma variable avec mon img1
+img1.addEventListener("mouseover", function(){  // j'ajoute mon évènment et je déclare ma fction
+  img1.src = "img/image1_2.jpg";              // je dis a ma fction que je veux changer la photo
+});
+img1.addEventListener("mouseout", function(){  //j'ajoute mon nvel évènement
+  img1.src = "img/image1.jpg";                 //  je dis a mon image de se remettre comme celle de départ
+});
+var img2 = document.getElementById("image2");
+img2.addEventListener("mouseover", function(){
+  img2.src = "img/image2_2.jpg";
+});
+img2.addEventListener("mouseout", function(){
+  img2.src = "img/image2.jpg";
+});
+var img3 = document.getElementById("image3");
+img3.addEventListener("mouseover", function(){
+  img3.src = "img/image3_2.jpg";
+});
+img3.addEventListener("mouseout", function(){
+  img3.src = "img/image3.jpg";
+});
+
+var img4 = document.getElementById("image4");
+img4.addEventListener("mouseover", function(){
+  img4.src = "img/image4_2.jpg";
+});
+img4.addEventListener("mouseout", function(){
+  img4.src = "img/image4.jpg";
+});
+var img5 = document.getElementById("image5");
+img5.addEventListener("mouseover",function(){
+  img5.src = "img/image5_2.jpg";
+});
+img5.addEventListener("mouseout", function(){
+  img5.src = "img/image5.jpg";
+
+});
+
+</script>
+  </body>
+</html>
